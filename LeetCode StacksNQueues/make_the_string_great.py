@@ -1,8 +1,8 @@
 class Solution(object):
-    def makeGood(self, s):
-        
-        stack = []
 
+    def makeGood(self, s):
+
+        stack = []
 
         for c in s:
             if stack and stack[-1].lower() == c.lower() and stack[-1] != c:
@@ -10,7 +10,6 @@ class Solution(object):
             else:
                 stack.append(c)
         return ''.join(stack)
-            
 
 
 solution = Solution()

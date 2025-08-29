@@ -1,11 +1,12 @@
 class Solution(object):
+
     def validateStackSequences(self, pushed, popped):
         """
         :type pushed: List[int]
         :type popped: List[int]
         :rtype: bool
         """
-        
+
         stack = []
         index = 0
 
@@ -16,8 +17,9 @@ class Solution(object):
                 stack.pop()
                 index += 1
         return not stack
-    
+
+
 solution = Solution()
 
-result = solution.validateStackSequences([1,2,3,4,5], [4,5,3,2,1])
+result = solution.validateStackSequences([1, 2, 3, 4, 5], [4, 5, 3, 2, 1])
 print(result)

@@ -1,7 +1,7 @@
 class MyQueue(object):
 
     def __init__(self):
-        
+
         self.elements = []
 
     def push(self, x):
@@ -9,18 +9,15 @@ class MyQueue(object):
         :type x: int
         :rtype: None
         """
-        
-        self.elements.append(x)
 
-        
+        self.elements.append(x)
 
     def pop(self):
         """
         :rtype: int
-        """ 
+        """
         if self.elements:
-            return self.elements.pop(0) 
-        
+            return self.elements.pop(0)
 
     def peek(self):
         """
@@ -28,7 +25,7 @@ class MyQueue(object):
         """
         if self.elements:
             return self.elements[0]
-        
+
     def empty(self):
         """
         :rtype: bool
@@ -38,8 +35,6 @@ class MyQueue(object):
             return False
         else:
             return True
-        
-
 
 
 obj = MyQueue()

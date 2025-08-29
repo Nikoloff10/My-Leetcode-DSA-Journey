@@ -10,7 +10,6 @@ class MinStack(object):
         """
 
         self.stack.append(val)
-        
 
     def pop(self):
         """
@@ -22,14 +21,14 @@ class MinStack(object):
         """
         :rtype: int
         """
-        
+
         return self.stack[-1]
 
     def getMin(self):
         """
         :rtype: int
         """
-        
+
         return min(self.stack)
 
 

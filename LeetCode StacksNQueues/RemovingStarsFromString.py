@@ -1,4 +1,5 @@
 class Solution(object):
+
     def removeStars(self, s):
         """
         :type s: str
@@ -17,7 +18,7 @@ class Solution(object):
             else:
                 result.pop()
         return "".join(result)
-        
+
 
 solution = Solution()
 

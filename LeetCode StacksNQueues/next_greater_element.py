@@ -1,4 +1,5 @@
 class Solution:
+
     def nextGreaterElement(self, nums1, nums2):
         res = [-1] * len(nums1)
         for i, num1 in enumerate(nums1):
@@ -12,6 +13,7 @@ class Solution:
                     found = True
 
         return res
-    
+
+
 solution = Solution()
-print(solution.nextGreaterElement([4,1,2], [1,3,4,2]))
+print(solution.nextGreaterElement([4, 1, 2], [1, 3, 4, 2]))
